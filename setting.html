@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <title>Setting</title>
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="header">
+            <div class="nav_bar">
+
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Darrabny_logo" srcset="">
+                </div>
+
+                <div class="search">
+                    <div class="search_input">
+                        <img src="img/search.svg" alt="" srcset="">
+                        <input type="text" placeholder="SEARCH" name="search_input" id="">
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">CAREERS</a></li>
+                        <li><a href="#">HELP</a></li>
+                    </ul>
+                </div>
+
+                <div class="profil_info">
+                    <div class="profil_name">
+                        <div class="profile_menu fade  hidden">
+                            <div class="arrow_top">
+                                <i class="fas fa-sort-up"></i>
+                            </div>
+                            <div id="profile_link">
+                                <img src="img/prof.jpg" alt="">
+                                <div>
+                                    <p id="name"><a href="#">Ahmed Khaled</a></p>
+                                    <p id="link"><a href="#">View profile</a></p>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="small">
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="#">CAREERS</a></li>
+                            </ul>
+                            <hr class="small">
+                            <ul>
+                                <li><a href="#">Log out</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Setting</a></li>
+                            </ul>
+                        </div>
+                        <div class="profil_imgMin">
+                            <img src="img/prof.jpg" alt="" srcset="">
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <h2>Ahmed Khaled</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="settingContent">
+            <div class="setting_header">
+                <div class="backToProfile">
+                    <button>
+                        Back To Profile
+                    </button>
+                </div>
+                <div class="setting_lable">
+                    <p>settings</p>
+                </div>
+            </div>
+
+            <div class="setting">
+                <div class="setting_sidbar">
+                    <ul id="slidMenu">
+                        <li onclick="currentSlide1(1)" class="active_setting"><a href="#">Personal Information</a></li>
+                        <li onclick="currentSlide1(2)"><a href="#">Profile & Cover Photo</a></li>
+                        <li onclick="currentSlide1(3)"><a href="#">Education</a></li>
+                        <li onclick="currentSlide1(4)"><a href="#">Experience</a></li>
+                        <li onclick="currentSlide1(5)"><a href="#">Skills</a></li>
+                        <li onclick="currentSlide1(6)"><a href="#">Languages</a></li>
+                    </ul>
+                </div>
+                <div class="setting_body">
+                    <form action="">
+
+                        <div class="slide ">
+
+                            <div class="setting_body_header">
+                                <p>Edit Personal Information</p>
+                            </div>
+
+                            <div class="forma1">
+                                <div class="gab"></div>
+                                <div class="form_body">
+                                    <div class="">
+                                        <label>Name</label>
+                                        <input type="text" name="name" id="">
+                                        <label>Age</label>
+                                        <input type="text" name="age" id="">
+                                        <label>Military Service</label>
+                                        <input type="text" name="military" id="">
+                                        <label>Country</label>
+                                        <input type="text" name="country" id="">
+                                        <label>Adress</label>
+                                        <input type="text" name="adress" id="">
+                                    </div>
+                                    <div class="">
+                                        <label>User Name</label>
+                                        <input type="text" name="user_name" id="">
+                                        <label>Matitial Status</label>
+                                        <input type="text" name="matitial" id="">
+                                        <label>Phone Number</label>
+                                        <input type="tel" name="Phone" id="">
+                                        <label>Governorate/City</label>
+                                        <input type="text" name="city" id="">
+                                    </div>
+                                </div>
+                                <div class="gab"></div>
+                            </div>
+                        </div>
+
+                        <div class="slide hidden">
+
+                            <div class="setting_body_header">
+                                <p>Edit Profile & Cover Photo</p>
+                            </div>
+
+                            <div class="forma2">
+                                <div class="profil_image">
+                                    <img src="img/prof.jpg" id="profileImageShower" alt="">
+                                    <label for="profile_img_uploader">Replace Profile Photo</label>
+                                    <input type="file" onchange="set_img(this, 'profileImageShower')" id="profile_img_uploader">
+                                </div>
+                                <div class="cover_image">
+                                    <img src="img/cover.jpg" id="coverImageShower" alt="">
+                                    <label for="cover_img_uploader">Replace Cover Photo</label>
+                                    <input type="file" onchange="set_img(this, 'coverImageShower')" id="cover_img_uploader">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide hidden">
+
+                            <div class="setting_body_header">
+                                <p>EDIT EDUCATION</p>
+                            </div>
+
+                            <div class="forma1">
+                                <div class="gab">
+                                </div>
+                                <div id="edu_container">
+                                    <div id="edus">
+                                        <div id="edu" class="edu">
+                                            <label>School/University</label>
+                                            <input type="text" name="University" id="">
+                                            <label>Degree</label>
+                                            <input type="text" name="Degree" id="">
+                                            <label>Field of study</label>
+                                            <input type="text" name="Field" id="">
+                                            <label>Grade</label>
+                                            <input type="text" name="Grade" id="">
+                                            <div id="year">
+                                                <div>
+                                                    <label>From Year</label>
+                                                    <input type="text" name="from_year" id="">
+                                                </div>
+                                                <div>
+                                                    <label>To Year</label>
+                                                    <input type="text" name="to_year" id="">
+                                                </div>
+                                            </div>
+
+                                            <label>Media</label>
+                                            <div id="media_container">
+                                                <div class="uploader">
+                                                    <label for="edu_file_uploader">UPLOAD FILE</label>
+                                                    <input type="file" name="edu_file" id="edu_file_uploader">
+                                                </div>
+                                                <div class="">
+                                                    <input type="text" name="" id="edu_url" placeholder="URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label id="eduAddLabel">+Add new education</label>
+
+                                </div>
+                                <div class="gab">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide hidden">
+                            <div class="setting_body_header">
+                                <p>EDIT Experience</p>
+                            </div>
+
+                            <div class="forma1">
+                                <div class="gab">
+                                </div>
+                                <div id="exp_container">
+                                    <div id="exps">
+                                        <div id="exp" class="exp">
+                                            <label>Jop title</label>
+                                            <input type="text" name="jop_title" id="">
+                                            <label>company</label>
+                                            <input type="text" name="company" id="">
+                                            <label>location</label>
+                                            <input type="text" name="location" id="">
+                                            <div id="year">
+                                                <div>
+                                                    <label>From Year</label>
+                                                    <input type="text" name="from_year" id="">
+                                                </div>
+                                                <div>
+                                                    <label>To Year</label>
+                                                    <input type="text" name="to_year" id="">
+                                                </div>
+                                            </div>
+
+                                            <label>Media</label>
+                                            <div id="media_container">
+                                                <div class="uploader">
+                                                    <label for="edu_file_uploader">UPLOAD FILE</label>
+                                                    <input type="file" name="exp_file" id="edu_file_uploader">
+                                                </div>
+                                                <div class="">
+                                                    <input type="text" name="exp_url" id="" placeholder="URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label id="expAddLabel">+Add new education</label>
+
+                                </div>
+                                <div class="gab">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="slide hidden">
+                            <div class="setting_body_header">
+                                <p>EDIT Skills</p>
+                            </div>
+
+                            <div class="forma1">
+                                <div class="gab">
+                                </div>
+
+                                <div id="skill_container">
+                                    <div id="skills">
+                                        <div id="skill" class="skill">
+                                            <div id="skill_option">
+                                                <div>
+                                                    <label>Skill</label>
+                                                    <select name="skill">
+                                                    <option></option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                    <option>skill1</option>
+                                                </select>
+                                                </div>
+                                                <div>
+                                                    <label>skill level</label>
+                                                    <select name="skill_l">
+                                                    <option></option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                            <label>Media</label>
+                                            <div id="media_container">
+                                                <div class="uploader">
+                                                    <label for="edu_file_uploader">UPLOAD FILE</label>
+                                                    <input type="file" name="skill_file" id="edu_file_uploader">
+                                                </div>
+                                                <div class="">
+                                                    <input type="text" name="skill_url" id="" placeholder="URL">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <label id="skillAddLabel">+Add new skill</label>
+                                </div>
+
+                                <div class="gab">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="slide hidden">
+                            <div class="setting_body_header">
+                                <p>EDIT Languages</p>
+                            </div>
+
+                            <div class="forma1">
+                                <div class="gab">
+                                </div>
+                                <div id="language_container">
+                                    <div id="languages">
+                                        <div id="language" class="language">
+                                            <div id="language_option">
+                                                <div>
+                                                    <label>Language</label>
+                                                    <select name="lang">
+                                                <option></option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                                <option>lang1</option>
+                                            </select>
+                                                </div>
+                                                <div>
+                                                    <label>Languages level</label>
+                                                    <select name="lang_l">
+                                                <option></option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                            <label>Media</label>
+                                            <div id="media_container">
+                                                <div class="uploader">
+                                                    <label for="edu_file_uploader">UPLOAD FILE</label>
+                                                    <input type="file" name="lang_file" id="edu_file_uploader">
+                                                </div>
+                                                <div class="">
+                                                    <input type="text" name="lang_url" id="" placeholder="URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label id="languageAddLabel">+Add new Language</label>
+                                </div>
+
+                                <div class="gab">
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="footer">
+
+            <div class="help">
+                <ul>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+                <img src="img/logo1.svg" alt="Darrabny_logo" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

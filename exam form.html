@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/app.js"></script>
+    <title>Exam</title>
+</head>
+
+<body>
+    <div class="examSettingContainer hidden">
+        <div class="examSetting">
+            <div class="examSettingHead">
+                <h2>settings</h2>
+            </div>
+            <form action="">
+                <div class="examSettingBody">
+                    <label for="">Exam options</label>
+                    <hr style="width: 40%">
+                    <br>
+                    <label for="">Release points</label>
+                    <br>
+                    <input type="checkbox" name="releaseOption" id="immediately">
+                    <label for="immediately">Immediately after each submission</label>
+                    <br>
+                    <input type="checkbox" name="releaseOption" id="afterReview">
+                    <label for="afterReview">later after maanual review</label>
+                    <br>
+                    <br>
+                    <label for="">Respndant can see:</label>
+                    <br>
+                    <input type="checkbox" name="respndantOption" id="missQuest">
+                    <label for="missQuest">Missed question</label>
+                    <br>
+                    <input type="checkbox" name="respndantOption" id="correctAns">
+                    <label for="correctAns">Correct answer</label>
+                </div>
+
+                <div class="examSettingFooter">
+                    <button class="cancelBtn">Cancel</button>
+                    <button class="saveBtn">save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="  main_container">
+        <div class="header">
+            <div class="nav_bar">
+
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Darrabny_logo" srcset="">
+                </div>
+
+                <div class="search">
+                    <div class="search_input">
+                        <img src="img/search.svg" alt="" srcset="">
+                        <input type="text" placeholder="SEARCH" name="search_input" id="">
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">CAREERS</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="profil_info">
+                    <div class="profil_name">
+                        <div class="profile_menu fade  hidden">
+                            <div class="arrow_top">
+                                <i class="fas fa-sort-up"></i>
+                            </div>
+                            <div id="profile_link">
+                                <img src="img/prof.jpg" alt="">
+                                <div>
+                                    <p id="name">
+                                        <a href="#">Ahmed Elsayed</a>
+                                    </p>
+                                    <p id="link">
+                                        <a href="#">View profile</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="small">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#">CAREERS</a>
+                                </li>
+                            </ul>
+                            <hr class="small">
+                            <ul>
+                                <li>
+                                    <a href="#">Log out</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profil_imgMin" onclick="">
+                            <img src="img/prof.jpg" alt="" srcset="">
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <h2>Ahmed Elsayed</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="examFormContent">
+            <div class="examFormHead">
+                <h2>Exam
+                    <a id="exameSettingButton">
+                        <i class="fas fa-cog"></i>
+                    </a>
+                </h2>
+
+            </div>
+
+            <div class="examFormTitle">
+                <h2>Title</h2>
+                <div class="titleInput">
+                    <input type="text" placeholder="untitled form">
+                </div>
+            </div>
+
+            <div class="examFormQuestionContainer">
+
+                <div class="questions">
+                    
+                    <div class="question hidden copyQuest">
+                        <label> Question#</label>
+            
+                        <div class="input questionHead">
+                            <input type="text" placeholder="Enter Question">
+                            <a class="questionRemover">
+                                <i class="fas fa-times"> Remove</i>
+                            </a>
+                        </div>
+                        <div class="answars">
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 1">
+                                <input type="checkbox" name="" id="answ1IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 2">
+                                <input type="checkbox" name="" id="answ2IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 3">
+                                <input type="checkbox" name="" id="answ3IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 4">
+                                <input type="checkbox" name="" id="answ4IsCorect">
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="question">
+                        <label> Question#</label>
+            
+                        <div class="input questionHead">
+                            <input type="text" placeholder="Enter Question">
+                            <a class="questionRemover">
+                                <i class="fas fa-times"> Remove</i>
+                            </a>
+                        </div>
+                        <div class="answars">
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 1">
+                                <input type="checkbox" name="" id="answ1IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 2">
+                                <input type="checkbox" name="" id="answ2IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 3">
+                                <input type="checkbox" name="" id="answ3IsCorect">
+                            </div>
+                            <div class="answarContainer">
+                                <input type="text" placeholder="Answar 4">
+                                <input type="checkbox" name="" id="answ4IsCorect">
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                    <div class="addQuestion">
+                        <label id="questionAddLabel">+Add new question</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formContentInfoFooter">
+                    <button type="button">Back</button>
+                    <button type="button">Done</button>
+            </div>
+        </div>
+
+
+        <div class="footer">
+
+            <div class="help">
+                <ul>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+                <img src="img/logo1.svg" alt="Darrabny_logo" srcset="">
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

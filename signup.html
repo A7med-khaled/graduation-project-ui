@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darrbny/signup</title>
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />        
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" /> 
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+       
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div class="container containA">
+        <div class="head">
+            <div class="header">
+                <div class="logo">
+
+                    <img src="img/logo.svg" alt="Darrbny_logo">
+
+                </div>
+                <div class="nav">
+                    <ul class="menu">
+                        <a href="">
+                            <li>STUDENT</li>
+                        </a>
+                        <a href="">
+                            <li>COMPANY</li>
+                        </a>
+                        <a href="">
+                            <li>FACULITY</li>
+                        </a>
+                        <a href="">
+                            <li>CAREER</li>
+                        </a>
+                        <a href="">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="">
+                            <li class="active">SIGN IN</li>
+                        </a>
+                    </ul>
+
+                    <img src="img/Menu.svg" class="menu_img hidden" alt="" srcset="">
+
+                    <ul class="dropDownMenu hidden">
+                        <li><a href="#">STUDENT</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="#">FACULITY</a></li>
+                        <li><a href="#">CAREER</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="signup_body">
+            <div class="side_bar">
+                <div class="info_menu si_up_bar">
+                    <img src="img/Group_336.png" alt="">
+                    <p>Hey there! You can start by creating </p>
+                    <p>a new account </p>
+                    <img src="img/Group_335.png" width="100%" alt="">
+                </div>
+            </div>
+            <div class="sign_up">
+
+                <div class="form" id="">
+
+                    <p>Edit personal information</p>
+
+                    <Form name="signup_form">
+                        <div class="sinUpForm_container">
+                            <div class="a">
+                                <input type="text" class="inpt" placeholder="NAME*" name="name">
+                                <input type="text" class="inpt" placeholder="USER NAME*" name="user_name">
+                                <input type="email" class="inpt" placeholder="EMAIl ADRESS*" name="user_email">
+                                <input type="password" class="inpt" placeholder="PASSWORD*" name="password">
+                                <input type="password" class="inpt" placeholder="REPEAT PASSWORD*" name="re_password">
+
+                            </div>
+
+                            <div class="a">
+                                <select name="user_type" class="inpt">
+                                    <option value="-1">ARE YOU...*</option>
+                                    <option value="">Student</option>
+                                    <option value="">Company</option>
+                                    <option value="">Faculity</option>
+                                    
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form_footer si_up">
+                            <button onclick="sigup_validation()" type="button">SIGN UP</button>
+                            <p>
+                                DO you have an account? <a href="login.html">Login</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="js/validation.js"></script>
+        <script src="js/app.js"></script>
+
+</body>
+
+</html>

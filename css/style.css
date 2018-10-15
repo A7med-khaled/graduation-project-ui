@@ -1,0 +1,2971 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "cairo";
+}
+
+input:focus,
+select:focus{
+    outline: none;
+}
+
+body{
+    background: #f1f1f1;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button,button:hover{
+    outline: none;
+   opacity: 1;
+}
+
+
+
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.drop {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1.5s;
+    animation-name: drop;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes drop {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
+}
+
+@keyframes drop {
+    from {
+        height: 0;
+    }
+    to {
+        height: 150px;
+    }
+}
+/* header Style */
+.header{
+    background: #32374A;
+    padding: 20px 20px;
+}
+
+.nav_bar{
+    height: 45px;
+    display: grid;
+    grid-template-columns: 15% 25% 30% 30%;
+}
+
+.logo{
+    height:inherit;
+}
+
+.logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.search{
+    
+}
+
+.search img{
+    width: 60%;
+    height: 100%;
+}
+
+.search_input{
+    display: grid;
+    grid-template-columns: 10% auto;
+    background: #fff;
+    padding: 2px;
+    width: 90%;
+    margin: 5px 20px;
+    padding: 5px;
+    border-radius: 10px;    
+}
+
+.search_input input{
+    width: 95%;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.search_input input:focus{
+    outline: none;
+}    
+
+.menu ul{
+    text-align: center;
+    padding: 5px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+
+.profil_info{
+    height: inherit;
+    margin-left: 100px; 
+    color: #fff;
+}
+
+.profil_name{
+    height: inherit;
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-column-gap: 10px;
+}
+.profil_imgMin {
+    height: inherit;
+}
+
+.profil_imgMin:hover{
+    cursor: pointer;
+}
+.profil_name img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profil_imgMin>i{
+    margin-top: 35px;
+    position: absolute;
+    color: #0385D6;
+    font-size: 20px;
+}
+
+.profile_menu{
+    box-shadow: 3px 3px 10px #ccc;    
+    position: absolute;
+    top: 95px;
+    right: 20%;
+    color: #32374A;
+    background: #F1F1F1;
+    z-index: 15;
+}
+.arrow_top{
+    text-align: right;
+    height: 10px;
+}
+.arrow_top i{
+    font-size: 40px;
+    line-height: 0.5em;
+}
+
+#profile_link{
+    box-shadow: 0px -3px 10px #ccc;        
+    position: relative;
+    height: 80px;
+    padding: 20px;;
+    
+}
+
+#profile_link img{
+    height: inherit;
+    border:2px solid #707070;
+}    
+
+#profile_link div{
+    display: inline-block;
+}
+
+#profile_link #name{
+    font-size: 24px;
+    line-height: 1em;
+    font-weight: bold;
+}
+
+#profile_link #link{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.profile_menu ul{
+    list-style: none;
+    padding-left: 20px;
+}
+
+.profile_menu ul li{
+    font-size: 20px;
+}    
+
+.small{
+    display: none;
+}
+/* End of Header */
+
+
+
+/* main body  */
+
+.mainContent{
+    display: grid;
+    grid-template-columns:20% auto 30% ;
+    grid-column-gap: 2%;
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+
+.sideBar{
+    text-align: center;
+    padding-bottom: 100px;
+    border: 2px solid #ccc;
+    background: #fff;
+    height: min-content;
+}
+
+.sideBar #info,
+.sideBar #completProjects,
+.sideBar #completTasks,
+.sideBar #TrainningPosted,
+.sideBar #InternshipPosted{
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.sideBar #info img{
+    width: 40%;
+    /* border: 2px solid #707070; */
+    border-radius: 50%;
+}
+
+
+.sideBar #info #name{
+    font-size: 24px;
+    font-weight: bold;
+    color: #32374A;
+    line-height: 1em;
+}
+
+.sideBar #info #edu,
+.sideBar #info #companyAbout{
+    font-size: 14px;
+    color: #32374A;
+    line-height: 1em;
+    margin-top: 10px;
+}
+
+.sideBar #num {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.suggestion{
+    border: 2px solid #ccc;
+    padding: 20PX;
+    height: min-content;
+    background: #fff;
+    
+}
+
+.follower{
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    margin-top: 20px;
+    grid-column-gap: 10px;
+
+}
+
+
+.follower div{
+    /* border: 1px solid black; */
+}
+
+.follower #img img{
+    width: 100%;
+    border: 2px solid #707070;
+    border-radius: 50%;
+}
+
+.follower #info{
+    padding-left: 20px;
+}
+.follower #info #name{
+    font-size: 19px;
+    font-weight: bold;
+   
+}
+
+.follower #info #about{
+    font-size: 11px;
+    font-weight: lighter;
+    line-height: 1em;
+}
+
+.follower #button{
+    padding-top: 10%;
+}
+
+.follower #button button{
+    width: 100%;
+    border: 1px  solid #707070;
+    background: none;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 20px;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+.follower #button button img {
+    width: 15px;
+    margin-right: 10px;
+
+}
+
+.follower #button button:focus{
+    outline: none;
+}
+
+
+
+
+
+/* stars */
+
+.rate{
+    margin-top: 20px;
+}
+.stars-outer {
+    position: relative;
+    display: inline-block;
+  }
+  
+.stars-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 75%;
+}
+  
+.stars-outer::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ccc;
+}
+  
+.stars-inner::before {
+    content: "\f005 \f005 \f005 \f005 \f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #f8ce0b;
+}
+  
+/* for post */
+.post{
+    background-color: #fff;
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    overflow: hiddden;    
+    padding: 10px;
+    margin-right: 20px;
+  
+}
+.post_container{
+    width: 97%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 33.333333%  33.333333%  33.333333% ;
+    grid-row-gap: 20px;
+    padding: 10px;
+}
+.post_header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% auto;
+
+
+}
+.post_profile{
+    width:100%;
+
+}
+.post_profile .profile_img{
+    display: grid;
+    grid-template-columns: 25% auto;
+    grid-column-gap: 5px;
+}
+.post_profile .profile_img .img{
+    
+    margin: auto 0;
+    height: 70px;
+    padding-top: 10px;
+}
+.post_profile .profile_img .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border:1px solid #000;
+}
+.post_profile .profile_img .img_info{
+    float: left;
+    overflow: hidden;
+    padding-top: 25px;
+    padding-left: 15px;
+}
+.post_profile .profile_img .img_info p{
+    font-weight: bold;
+   line-height: 1em;
+}
+.post_profile .profile_info{
+    width: 100%;
+    padding-top:10px;
+}
+.font_icon{
+    overflow: hidden;
+}
+
+.font_icon span{
+    float: right;
+    color: #0385d6;
+    font-size: 6px;
+    cursor: pointer;
+}
+
+.font_icon span i{
+    margin-right: 5px;
+}
+
+.post_content{
+    width: 100%;
+}
+
+.post_footer {
+    width: 100%;
+}
+
+.post_footer button{
+    width: 20%;
+    height: 40px;
+    color:#fff;
+    background-color: #0385d6;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.post_footer button:hover{
+    opacity: 1;
+}
+
+/* end of main body */
+
+
+/* Footer style */
+
+.footer{
+    background: #32374A;
+    color: #fff;
+    overflow: hidden;
+}
+.help{
+    width: 95%;
+    margin:auto;
+}
+
+
+.footer ul{
+    display: inline-block;
+    margin-top: 10px;
+}
+.footer ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.footer img{
+    height: 50px;
+    display: inline-block;
+    float: right;
+}
+
+.wall{
+    overflow-y: scroll;
+    height: 800px;
+}
+.wall::-webkit-scrollbar-track
+{
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #ccc;
+}
+
+.wall::-webkit-scrollbar
+{
+	width: 12px;
+    background-color: #F5F5F5;
+    
+}
+
+.wall::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #fff;
+    height: 5px;
+    display: inline-block;
+    height: 5px;
+}
+
+.wall .addNewPostBtn{
+    width: 20%;
+    height: 40px;
+    color:#fff;
+    background-color: #0385d6;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+/* ////End of the wall page/// */
+
+
+/* ////start of the setting page/// */
+.settingContent,
+.profileContent{
+    width: 90%;
+    margin: 20px auto;
+    margin-bottom: 120px;
+}
+.setting_header,
+.setting,
+.profileContentHeader,
+.profile{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.backToProfile,
+.editProfile{
+    padding-left: 40px;    
+}
+
+.backToProfile button,
+.editProfile button{
+    color: #fff;
+    background: #0385D6;
+    border: none;
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.setting_lable{
+    text-align: center;
+}
+
+.setting_lable p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #0385D6;
+    border-bottom: 1px solid #ccc;
+    width: min-content;
+    margin: auto;
+}
+
+.setting_sidbar{
+    background: #fff;
+    box-shadow: 2px 2px 5px #ccc ,-2px -2px 5px #ccc;
+    padding:20px 10px; 
+    height: min-content;
+}
+
+.setting_sidbar ul{
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.setting_sidbar ul li{
+    padding-left: 15px;
+   
+}
+
+.active_setting{
+    border-left: 3px solid #0385D6 ;
+    font-weight: bold;
+}
+
+.setting_body{
+    background: #fff;
+}
+
+
+.setting_body_header{
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    padding: 15px 30px;
+}
+
+.forma1{
+    display: grid;
+    grid-template-columns:30% auto 10%;
+    border: 1px solid #ccc; 
+    padding-bottom: 30px;
+}
+.forma2{
+    border: 1px solid #ccc; 
+    padding: 30px;    
+}
+
+.form_body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    color: #32374A;
+    
+}
+
+
+.form_body input,
+.edu input,
+.exp input,
+.skill input,
+.skill select,
+.language input,
+.language select{
+    width: 95%;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    padding-left: 5px;
+    font-weight: bold;
+    height: 30px;
+}   
+
+
+   
+
+.form_body label{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+
+.profil_image,
+.cover_image{
+    text-align: center;
+}
+
+.profil_image img{
+    width: 15%;
+    border-radius: 50%;
+    display: block;
+    margin:10px auto;
+}
+
+.cover_image img{
+    width: 95%;
+    height: 250px;
+    display: block;
+    margin: 20px auto;
+}
+
+.profil_image input,
+.cover_image input,
+.edu #media_container input[type='file'],
+.exp #media_container input[type='file'],
+.skill #media_container input[type='file'],
+.language #media_container input[type='file']{
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    display: none;
+}
+
+.profil_image label,
+.cover_image label{
+    cursor: pointer;
+}
+
+.profil_image label:hover,
+.cover_image label:hover{
+    color: #0385D6;
+}
+
+
+.edu #year,
+.exp #year,
+.skill #skill_option,
+.language #language_option{
+    display: grid;
+    grid-template-columns: 47% 47%;
+    grid-column-gap: 15px;
+}
+
+.edu #media_container,
+.exp #media_container,
+.skill #media_container,
+.language #media_container{
+    display: grid;
+    grid-template-columns: 25% 25%;
+    grid-column-gap: 30px;
+}
+
+.edu #media_container input,
+.exp #media_container input,
+.skill #media_container input,
+.language #media_container input{
+    border: 1px solid #006ab5;
+}
+
+
+
+
+
+.uploader{
+    border: 1px solid #006ab5;
+    border-radius: 5px;
+    padding: 0px 10px;
+    width: 90%;
+    text-align: center;
+    color: #000;
+    height: min-content;
+}
+
+
+
+
+
+
+/* ////End of the setting page/// */
+
+
+/* ////start of the profile page/// */
+
+.profile_lable,
+.profileBody_lable {
+    text-align: center;
+    color: #32374A;
+}
+
+.profile_lable .tab,
+.profile_lable .tabCv,
+.profileBody_lable .bodyTab,
+.profileBody_lable .bodyNegTab{
+    display: inline-block;    
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto 10px;
+    cursor: pointer;
+}
+
+.activeLabel{
+    color: #0385D6;
+    border-bottom: 2px solid #ccc;
+}
+
+.profileSidebar .personalInfo,
+.profileSidebar .activityInfo,
+.profileSidebar .experienceInfo,
+.profileSidebar .skillInfo,
+.profileSidebar .languageInfo{
+    border: 0.5px solid #ccc;
+    box-shadow: 3px 3px 5px #ccc,-3px -3px 5px #ccc;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    color: #32374A;
+    background: #fff;
+}
+
+.personalInfo #name{
+    font-size: 25PX;
+    font-weight: 600;
+}
+
+.personalInfo #imgInfo{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-column-gap: 25px;
+}
+
+.personalInfo #personalImg img{
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #707070;
+}
+
+.personalInfo #personalDetails p{
+    font-size: 20px;
+}
+
+.personalInfo #personalDetails #location img{
+    width: 20px;
+}
+
+.activityInfo #activities{
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.activityInfo #activities ul{
+    list-style: none;
+}
+
+.activityInfo #activities #activityNo #noMenu li{
+    text-align: right;
+}
+
+.infoTitel{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+dd{
+    -webkit-margin-start: 40px;
+    line-height: 1.5em;
+}
+
+
+.experience .expTitel,
+.skill .skillTitel,
+.language .languageTitel{
+    font-size: 16px;
+    font-weight: bold; 
+    margin-top: 5px; 
+}
+.experience i,
+.skill i,
+.language i{
+    font-size: 11px;
+    margin-right: 10px;
+}
+
+
+.profileBody{
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #ccc;
+    background: #fff;
+}
+
+.profileBody_lable{
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.courses_projects{
+    width: 80%;
+    margin: 20px auto;
+    color: #32374A;
+}
+
+.courses_projects .row{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-column-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.courseLogo,
+.projectLogo{
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px #ccc;
+    background: #fff;
+}
+.courseLogo img,
+.projectLogo img{
+    width: 80%;
+    margin: 5px auto;
+    
+}
+
+.courseDetails,
+.projectDetails{
+    border: 1px solid #ccc;
+    padding: 10px 10px;
+    box-shadow: 2px 2px 5px #ccc;
+    background: #fff;
+}
+
+
+.courseDetails .name,
+.projectDetails .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.courseDetails .fromTo,
+.projectDetails .fromTo{
+    line-height: 1em;
+}
+
+
+    
+/* ////End of the profile page/// */
+
+/* //////statistics////////// */
+
+
+
+.totalContent{
+    padding: 30px ;
+}
+
+
+.totalRate{
+    padding: 20px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 100px;
+
+}
+
+.totalHead h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.5em ;         
+}
+
+.totalHead p{
+    font-size: 25px;
+    font-weight: lighter;
+    padding-left: 5px;
+    line-height: 0.5em
+}
+
+.stars{
+    float: left;
+    padding: 2px;
+    font-size: 30px;
+}
+
+.statisticsContent{
+    width: 55%;
+    margin: 0  auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 5%;
+    text-align: center;
+    
+}
+
+.statisticsContent p{
+    color: #0385D6;
+    font-size: 20px;
+}
+
+p.numbers{
+    font-size: 120px;
+}
+
+.statisticsContent button{
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #32374A;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tasksInfo{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 26px;
+    margin-top: 100px;
+}
+
+.tasksInfo p{
+    color: #000;
+}
+
+.tasksInfoHeader{
+    padding-bottom: 20px;
+    margin: 20px auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60% auto;
+    border-bottom: 2px solid #ccc;
+}
+
+
+.tasksInfoHeader .tabs{
+    text-align: right;
+}
+
+.tasksInfoHeader .tabs p{
+    width: min-content;
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.taskInfo{
+    display: grid;
+    grid-template-columns: 60% auto;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 10px 0;
+}
+.checkComplet{
+    text-align: right;
+    padding-right: 15px;
+}
+
+.completed{
+    color: #0385D6;
+}
+
+/* /////////////////////////// */
+.small_show{
+    display: none;
+}
+.small_hidden{
+    display: grid;
+}
+
+
+
+
+/* /////respose/// */
+
+@media only screen and (max-width: 1300px) {
+    .follower #button button img {
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .follower #button button{
+        font-size: 16px;
+    }
+
+    .profil_info {
+        margin-left: 50px;
+    }
+
+    .follower{
+        grid-column-gap: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .profil_info {
+        margin-left: 30px;
+    }
+
+    .follower #info {
+        padding-left: 10px;
+    }
+
+    .suggestion{
+        padding: 10px;
+    }
+
+    .menu li{
+        margin-left: 15px;        
+    }
+
+    .sideBar #info #name{
+        font-size: 20px;        
+    }
+
+    .sideBar #info #edu{
+        font-size: 11px;        
+    }
+
+    .mainContent {
+        grid-column-gap: 2%;
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .profil_name {
+        grid-template-columns: 25% auto;
+    }
+}
+
+
+@media only screen and (max-width: 870px) {
+    .menu li {
+        margin-left: 10px;
+        font-size: 19px;
+    }
+
+    .profil_name h2{
+        font-size: 20px;
+    }
+
+    .follower #button button img {
+        display: none;
+    }
+    
+    .sideBar div {
+        padding: 10px;
+        padding-bottom: 30px;
+    }
+
+    .profil_name {
+        grid-template-columns: 30% auto;
+    }
+
+    .courses_projects{
+        width: 95%;
+    }
+    .profileContent{
+        width: 95%;
+    }
+    .personalInfo #imgInfo{
+        grid-column-gap: 15px;
+    }
+    .personalInfo #personalDetails p{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    #location{
+        text-align-last: center;
+    }
+
+    .activityInfo #activities{
+        grid-template-columns: 90% auto;
+        font-size: 16px;
+    }
+
+    .experience .expTitel,
+    .skill .skillTitel, 
+    .language .languageTitel {
+        font-size: 16px;
+    }
+
+    dd {
+        -webkit-margin-start: 20px;
+        font-size: 14px;
+    }
+
+    .courseDetails .name, .projectDetails .name {
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+
+    .totalRate {
+        padding: 0;
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 55% auto;
+    }
+
+    .totalHead p {
+        font-size: 20px;
+    }
+
+    .statisticsContent {
+        width: 100%;
+    }
+
+    .totalRate{
+        margin-bottom: 60px;
+    }
+    .tasksInfo {
+        width: 100%;
+    }
+    .tasksInfoHeader .tabs p {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+    .tasksInfoHeader{
+        grid-template-columns: auto auto;
+    }
+
+    .taskInfo{
+        grid-template-columns: 80% auto;
+    }
+
+    .taskInfo p{
+        font-size: 24px;
+    }
+    #name p{
+        font-size: 24px;
+    }
+    #location img{
+        display: none;
+    }
+}    
+
+
+@media only screen and (max-width: 800px) {
+    
+    .nav_bar {
+        grid-template-columns: 15% 35% 35% auto;
+    }
+
+    .profile_menu{
+        right: 3%;
+    }
+
+    .profil_name h2 {
+        display: none;
+    }
+
+    .profil_name {
+        grid-template-columns: auto auto;
+    }
+    .profil_info {
+        margin-left: 30px;
+    }
+
+    .mainContent{
+        grid-template-columns: auto 30%;
+    }
+
+    .sideBar{
+        display: none;
+    }
+}
+    
+
+@media only screen and (max-width: 670px) {
+    .nav_bar {
+        grid-template-columns: 25% 55% auto;
+    }
+    .menu{
+        display: none;
+    }
+
+    .profil_info {
+        margin-left: 25px;
+    }
+
+    .profil_info {
+        margin-left: 30px;
+    }
+
+    .small{
+        display: block;
+    }
+    .profil_name {
+        grid-template-columns: auto;
+    }
+
+    .mainContent {
+        grid-template-columns: auto;
+    }
+
+    .follower #button button img{
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .suggestion {
+        padding: 10px;
+        width: 60%;
+        margin: auto;
+    }
+
+    .backToProfile {
+        padding-left: 0px;
+    }
+
+    .forma1{
+        grid-template-columns: 5% auto 10%;
+    }
+
+    .edu #media_container,
+    .exp #media_container,
+    .skill #media_container, 
+    .language #media_container{
+        grid-template-columns: auto auto;
+    }
+
+    .profil_image img{
+        width: 40%;
+    }
+
+    .cover_image img{
+        widows: 100%;
+        height: 150px;
+    }
+
+    .setting_header,
+    .setting, 
+    .profileContentHeader,
+    .profile{
+        display: block;
+    }
+
+    .small_show{
+        display: block;
+    }
+    .small_hidden{
+        display: none;
+    }
+
+    .editProfile,
+    .backToProfile {
+        width: min-content;
+        margin: 20px auto;
+    }
+
+    .editProfile button,
+    .backToProfile button{
+        width: max-content;
+    }
+
+    #location img{
+        display: inline;
+    }
+
+    #location{
+        text-align-last: left;
+    }
+    #name p {
+        font-size: 40px;
+    }
+
+    .profileSidebar .personalInfo{
+        padding: 20px 40px;
+    }
+    .setting_sidbar{
+        margin-bottom: 25px;
+    }
+}    
+
+@media only screen and (max-width: 450px) {
+.profil_imgMin i{
+    display: none;
+}
+
+}
+
+#eduAddLabel,
+#expAddLabel,
+#skillAddLabel,
+#languageAddLabel{
+    color:#30bfd0;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.line{
+    margin: 20px auto;
+    box-shadow: 2px 2px 5px #ccc;
+}
+
+.delete{
+    color: #0385d6;
+    cursor: pointer;
+}
+.delete:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* //////search page style///////// */
+.buttonBack{
+    padding: 20px;
+}
+
+.searhInput{
+    width: 65%;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    height: min-content;
+    display: grid;
+    grid-template-columns: 5% auto;
+    margin: 20px auto;
+    padding: 0 5px;
+    background: #fff;
+    overflow: hidden;
+}
+
+.searhInput input{
+    width:100%;
+    height:100%;
+    font-size: 26px;
+    border: none;
+}
+
+.searhInput input:focus{
+    outline: none;
+}
+
+.searhInput img{
+    height: 30px;
+}
+
+.resultRow{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 20px;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.filter{
+    width: 80%;
+    margin: 20px auto;
+}
+
+.filter button{
+    font-size: 22px;
+    margin-left: 30px;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.filter button i{
+    color: #0385d6;
+    margin-left: 5px;
+}
+
+.filter button:hover{
+    color: #0385d6;
+}
+
+.filter button:hover i{
+    color: #32374A;
+}
+
+
+.filterForm{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    padding:20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ccc,-1px -1px 5px #ccc;
+}
+
+.filterForm label{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.filterForm input[type="checkbox"]{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.filterForm input[type="text"],
+.filterForm select{
+    width: 100%;
+    border: 1px solid #717171;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.locationFilter label{
+    margin-left: 30px;
+}
+
+.filterApplyButton button{
+    padding: 0 20px;
+    font-size: 22px;
+    font-weight: bold;
+    background: #0385D6;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+.filterApplyButton button:hover{
+    color: #fff;
+    background: #02446d;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
+///////////////////////
+//////////////////
+//////// */
+
+body {
+    overflow-x: hidden;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'cairo';
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input {
+    padding-left: 5px;
+}
+
+
+/* header style */
+
+.containA .head {
+    height: auto;
+    width: 100%;
+    background: #32374a;
+}
+
+.containA .header {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    padding: 0;
+}
+
+.containA .logo {
+    width: 30%;
+    height: 110px;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav {
+    width: 70%;
+    float: right;
+}
+
+.containA .nav .menu  {
+    list-style: none;
+    margin-top: 50px;
+    text-align: right;
+}
+
+.containA .nav .menu li {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: auto;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.containA .active {
+    background: #006ab5;
+}
+
+
+.containA .hidden{
+    display: none;
+}
+
+
+
+/* End of header style */
+
+/* /////////////////////////////// */
+
+/* Sign in body style */
+
+.containA .login_body {
+    width: 33%;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    box-shadow: 5px 5px 10px #757575;
+}
+
+.containA .login {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.containA .login img {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.containA .login_email,
+.containA .login_password {
+    width: 100%;
+    height: 35px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.containA .login button {
+    width: 65%;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    height: 40px;
+    background: #006ab5;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.containA .forget a {
+    color: #30bfd0;
+}
+
+.containA .not_mebmer a {
+    color: #000;
+    font-weight: bold;
+}
+
+/* /end of Login body style/ */
+
+/* personal info body1 style */
+
+.containA .personal_info_body,
+.containA .faculity_info_body,
+.containA .company_info_body,
+.containA .signup_body {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 33% auto;
+    grid-column-gap: 5PX;
+}
+
+.containA .side_bar {
+    background-color: #32374a;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.containA .si_up_bar {
+    text-align: center;
+}
+
+.containA .info_menu {
+    width: 85%;
+    margin: auto;
+    padding: 50px 0;
+}
+
+.containA .info_menu p {
+    font-size: 16px;
+}
+
+.containA .info_menu ul {
+    margin: 25px auto;
+}
+
+.containA .info_menu ul li {
+    list-style: none;
+    font-size: 14px;
+    color: #6d6b6b;
+}
+
+.containA .info_menu .finished_list,
+.containA .info_menu .finished_list p {
+    color: #fff;
+    font-weight: bold;
+}
+
+.containA  .info_menu .finished_list p {
+    border: 1px solid #30bfd0;
+}
+
+.containA .info_menu ul li p {
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 1px solid #6d6b6b;
+    color: #6d6b6b;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.containA .info_menu p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+.containA .personal_info,
+.containA .faculity_info,
+.containA .sign_up {
+    background: #fff;
+    border-radius: 10px;
+    padding-top: 40px;
+    height: 450px;
+    overflow-y: auto;
+    box-shadow: 5px 0 #979696;
+}
+
+.containA .form {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.containA .form_footer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.containA .form_footer button {
+    width: 30%;
+    height: 40px;
+    background: #006ab5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 20px 10px;
+}
+
+.containA .si_up button {
+    width: 50%;
+}
+
+.containA .form_footer a {
+    text-decoration: underline;
+    color: #30bfd0;
+    font-size: 14px;
+}
+
+.containA .form_container ,
+.containA .sinUpForm_container{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 20px;
+    margin: 20px auto;
+}
+
+.containA .form_container select,
+.containA .form_container input {
+    width: 100%;
+    margin: 5px auto;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 30px;
+}
+
+
+.containA .inpt{
+    width: 100%;
+    margin: 5px auto;
+    border: none;
+    border-bottom: 1px solid #000;
+    height: 30px;
+}
+/* END Of personal info body1 style */
+
+/* personal info body2 style */
+
+.containA input[type="file"] {
+    opacity: 0;
+    position: absolute;
+    width: 0.1px;
+    height: 0.1px;
+    z-index: -1;
+}
+
+.containA .uploader_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 10px;
+    margin-top: 20px;
+}
+
+.containA .uploader_container>label {
+    color: #30bfd0;
+}
+
+.containA .uploader_foot {
+    margin-top: 25px;
+}
+
+.containA .uploader_container label {
+    cursor: pointer;
+}
+
+.containA .uploader {
+    border: 1px solid #006ab5;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 80%;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.containA .uploader label {
+    cursor: pointer;
+}
+
+.containA .cover_photo {
+    height: 100px;
+    width: 100%;
+    background: #30bfd0;
+    border-radius: 5px;
+}
+
+.containA .cover_photo img {
+    border-radius: 5px;
+}
+
+.containA .profile_photo {
+    width: 50%;
+    height: 130px;
+    margin: auto;
+    margin-top: 10px;
+    background: #30bfd0;
+    border-radius: 50%;
+}
+
+.containA .profile_photo img {
+    border-radius: 50%;
+}
+
+.containA .show_photos {
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #006ab5;
+    box-shadow: 5px 5px 5px #CCC;
+}
+
+.containA .show_photos img {
+    height: 100%;
+    width: 100%;
+}
+
+/* END Of personal info body2 style */
+
+/* //////////////////////////////////////////////////////// */
+
+/* personal info body3 style */
+
+.containA .edu_container,
+.containA .exp_container {
+    margin-top: 20px;
+}
+
+.containA .form>p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.containA .edu_container input,
+.containA .exp_container input {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.containA .uploader input[type="text"] {
+    border: none;
+    overflow: hidden;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.containA .media_container .uploader {
+    display: inline-block;
+    margin: auto 10px;
+    width: 25%;
+    height: auto;
+}
+
+.containA .year,
+.containA .skill_option,
+.containA .language_option {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 15px;
+}
+
+.containA .skill_option select,
+.containA .language_option select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.containA .skill_container,
+.containA .language_container {
+   
+}
+
+.setting_body #skill_container,
+.setting_body #language_container{
+    padding-bottom: 150px;
+}
+
+.containA hr{
+    margin: 5px auto;
+}
+/* END Of personal info body3 style */
+
+/* ////Faculity style///// */
+
+/* //// end of Faculity style///// */
+
+.containA textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    resize: none;
+}
+
+.containA .about_container {
+    border: 1px solid #ccc;
+    height: 160px;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* //Responsive for header / */
+
+@media only screen and (max-width: 1400px) {
+    .containA .nav .menu li {
+        padding: 5px 35px;
+    }
+    .containA .personal_info_body {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .containA .nav .menu li {
+        padding: 5px 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .containA .nav .menu li {
+        padding: 5px 25px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .containA .nav .menu li {
+        padding: 5px 20px;
+    }
+
+    .containA .personal_info_body,
+    .containA .faculity_info_body,
+    .containA .company_info_body,
+    .containA .signup_body{
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .containA .nav .menu li {
+        padding: 5px 15px;
+    }
+    /* ////Responsive of  Login body///// */
+    .containA .login_body {
+        width: 40%;
+    }
+    .containA .personal_info_body {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .containA .nav .menu li {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .containA .logo {
+        height: 90px;
+    }
+    .containA .nav .menu  {
+        margin-top: 45px;
+    }
+    
+
+    .containA .personal_info_body,
+    .containA .faculity_info_body,
+    .containA .company_info_body,
+    .containA .signup_body{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .containA .logo {
+        height: 70px;
+    }
+    .containA .nav .menu  {
+        margin-top: 35px;
+    }
+    .containA .header {
+        width: 95%;
+    }
+    /* ////Responsive of  Login body///// */
+    .containA .login_body {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .containA.logo {
+        height: 55px;
+    }
+    .containA .nav .menu li {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+    .containA.nav .menu  {
+        margin-top: 25px;
+    }
+    .containA .header {
+        width: 99%;
+    }
+
+    .containA .personal_info_body,
+    .containA .faculity_info_body,
+    .containA .company_info_body,
+    .containA .signup_body{
+        grid-template-columns: 35% auto;
+    }
+}
+
+/* //mobile size// */
+
+@media only screen and (max-width: 600px) {
+    .containA .menu{
+    display: none;
+}
+
+.containA .menu_img{
+    display: block;
+}
+.containA .personal_info_body,
+.containA .faculity_info_body,
+.containA .company_info_body{
+    grid-template-columns: 40% auto;
+    width: 97%;
+}
+
+.containA .info_menu {
+    width: 95%;
+}
+
+.containA .media_container .uploader{
+    width: 85%;
+}
+}
+
+/* ////End of Header responsive/// */
+
+/* ////////////////////////////////////////// */
+
+
+.containA .dropDownMenu{
+    position: absolute;
+    right: 0;
+    top: 100px;
+    padding-top:20px; 
+    background: #D1D4F7;
+    width: 40%;
+    height: 80%;
+    box-shadow: -5px 0px 10px #ccc;
+    
+
+}
+.containA .dropDownMenu li a{
+    color: #32374a;
+    text-align: left;
+}
+.containA .dropDownMenu li{
+    display: block;
+    padding: 10px;   
+    padding-left: 20px; 
+    font-weight: bold;
+}
+
+.containA .dropDownMenu li:hover {
+    background: #006ab5;
+}
+
+.containA .dropDownMenu li:hover a{
+    color: #fff;
+}
+
+.containA .menu_img{
+    height: 40px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+
+.containA .err{
+    border-bottom: 2px solid red;
+}
+
+
+/* //////////////////////////////////////// */
+
+
+
+
+
+
+/* //////////////////company wall add post/////////// */
+
+
+.addNewPostContainer{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+}
+
+.addNewPostContainer::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background:;
+  }
+.addnewpost{
+    width: 40%;
+    margin: 20px auto;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    color: #32374A;
+    background: #fff;
+    opacity: 1.0;
+  }
+
+  
+
+  
+  .addnewpost .addNewpostHeader{
+    background: #0385D6;
+    border: 1px solid #707070;
+    border-radius: 10px;
+    padding: 5px 25px;
+    color: #fff;
+  }
+  
+  .addnewpost .addNewPostForm{
+    padding: 20px;
+  }
+  
+  
+  .addnewpost .addNewPostForm label{
+    font-weight: bold;
+  }
+
+  .addnewpost .addNewPostForm #postTitle,
+  .addnewpost .addNewPostForm #postCoach{
+      width: 60%;
+      border: none;
+      outline: none;
+      margin-left: 10px;
+  }
+  
+  .addnewpost .addNewPostForm label[for="withExame"],
+  .addnewpost .addNewPostForm label[for="withoutExame"]{
+    cursor: pointer;
+  }
+  .addnewpost .addNewPostForm input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .addnewpost .addNewPostForm hr{
+    width: 97%;
+    color: #707070;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    opacity: 0.3;
+  }
+  .addnewpost .addNewPostForm textarea{
+    width: 98%;
+    margin: 10px auto;
+    padding: 5px;
+    resize: none;
+  }
+  
+  
+  .addnewpost .addNewPostForm .creatFormBtn{
+    width: 20%;
+      height: 40px;
+      color:#fff;
+      background-color: #0385d6;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-bottom: 15px;
+      font-size: 20px;
+  }
+  
+  .addnewpost .addNewPostForm .addNewPostFormFooter{
+    text-align: right;
+    padding: 5px 20px;
+  }
+  
+  .addnewpost .addNewPostForm .addNewPostFormFooter .cancelBtn,
+  .addnewpost .addNewPostForm .addNewPostFormFooter .postBtn{
+    background: none;
+    border: none;
+    margin-right: 20px; 
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .addnewpost .addNewPostForm .addNewPostFormFooter .postBtn{
+    color: #0385d6;
+  }
+
+
+
+  /* //////////////form content information////////////////// */
+  
+
+  .formContentInfo{
+    margin: 20px auto;
+    width: 60%;
+    color: #32374A;
+    
+  }
+
+  .formContentInfo input{
+      border: none;
+  }
+
+  .formContentInfo .formContentInfoHead{
+    border: 2px solid #ccc;
+    padding: 5px;
+    text-align:center;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .formContentInfo .formContentInfoHead h3{
+    font-size: 20px;
+  }
+  
+  .formContentInfo .formTitle{
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .formContentInfo .formTitle h2{
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  .formContentInfo .formTitle .titleInputContainer{
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    padding: 5px;
+  }
+  
+  .formContentInfo .formTitle .titleInputContainer input{
+    font-size: 20px;
+  }
+  
+  
+  .formContentInfo  .informationInputContainer{
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    padding-left: 50px;
+    border-radius: 10px;
+    overflow: auto;
+    background: #fff;
+    min-height: 200px;
+  
+  }
+  
+  .informationInputContainer .infoInput{
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    padding: 5px;
+  }
+  
+  .informationInputContainer  input{
+    width: 80%;
+    font-size: 25px;
+  }
+  
+  .informationInputContainer  a{
+    float: right;
+    padding-top: 10px;
+  }
+  
+  .informationInputContainer  a:hover{
+    color: #30bfd0;
+    text-decoration: underline;
+    text-decoration-color: #ff0000;
+  }
+  
+  .informationInputContainer  a:hover i{
+    color: #ff0000;
+  }
+  
+  .informationInputContainer .add_question{
+    float:right;
+    margin-top: 10px;
+  }
+  
+  .informationInputContainer .add_question #qesAddLabel{
+    cursor: pointer; 
+    font-size: 25px;
+  }
+  
+  .informationInputContainer .add_question #qesAddLabel:hover{
+    color: #30bfd0;
+  }
+  .formContentInfoFooter{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .formContentInfoFooter button{
+    background-color: #0385D6;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: #fff;
+    font-weight: bolder;
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 0.7;
+    font-size: 20px;
+  }
+
+  .formContentInfoFooter button:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+
+
+
+  @media only screen and (max-width: 1222px) {
+    .informationInputContainer .input_name, 
+    .informationInputContainer .input_email, 
+    .informationInputContainer .input_linkedin{
+        width: 80%;
+    }
+
+    .formContentInfo .formTitle .titleInputContainer {
+        width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .formContentInfo{
+        width: 75%;
+
+    }
+  }
+
+  @media only screen and (max-width: 750px) {
+    .formContentInfo{
+        width: 95%;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .informationInputContainer .input_name, 
+    .informationInputContainer .input_email, 
+    .informationInputContainer .input_linkedin{
+        width: 95%;
+    }
+
+    .formContentInfo .formTitle .titleInputContainer {
+        width: 95%;
+    }
+  }
+
+
+ /* /////////////////////////exam form///////////////////////////  */
+
+ 
+  .examFormContent{
+    margin: 20px auto;
+    width: 60%;
+  }
+  
+  .examFormContent input{
+      border: none;
+      font-size: 20px;
+  }
+
+
+  .examFormContent .examFormHead{
+    border: 2px solid #ccc;
+    padding: 5px 20px;
+    text-align:center;
+    border-radius: 10px;
+    background: #fff;
+  }
+  
+  .examFormContent .examFormHead h2{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .examFormContent .examFormHead h2 a{
+    float: right;
+    font-size: 20px;
+  }
+  
+  .examFormContent .examFormTitle{
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .examFormContent .examFormTitle h2{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .examFormContent .examFormTitle input{
+      width: 80%;
+  }
+
+  .examFormContent .examFormTitle .titleInput,
+  .examFormContent .examFormQuestionContainer .questions .input{
+    border-bottom: 1px solid #ccc;
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .examFormContent .examFormQuestionContainer .questions{
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+    min-height: 250px;
+    overflow: auto;
+  }
+  
+  .examFormContent .examFormQuestionContainer .questions span{
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .examFormContent .examFormQuestionContainer .questions #checkbox{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  .examFormContent .examFormQuestionContainer .questions input{
+    width: 80%;
+    font-weight: bold;
+  }
+  .examFormContent .examFormQuestionContainer .questions label{
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .examFormContent .examFormQuestionContainer .questions .requiredFild{
+    margin-left: 30px;
+    font-weight: normal;
+    display: inline;
+  }
+
+  .examFormContent .examFormQuestionContainer .questions .requiredFild label{
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  
+
+  .examFormContent .examFormQuestionContainer .questions .addQuestion{
+    width: 100%;
+    text-align: right;
+   
+  }
+
+  
+  .examFormContent .examFormQuestionContainer .questions .questionRemover{
+      float: right;
+  }
+
+  .examFormContent .examFormQuestionContainer .questions .questionRemover:hover{
+      color: #ff0000;
+  }
+
+  .examFormContent .examFormQuestionContainer .addQuestion #questionAddLabel {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: normal;
+
+  }
+
+  .examFormContent .examFormQuestionContainer .addQuestion #questionAddLabel:hover {
+    color: #30bfd0;
+  }
+
+  .examFormContent .examFormQuestionContainer .question{
+    margin-bottom: 20px;
+  }
+
+  .examFormContent .examFormQuestionContainer .question a{
+    padding-top: 10px;
+  }
+
+  .examSettingContainer{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+  }
+
+
+
+.examSettingContainer::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100%;  
+    opacity: .4; 
+    z-index: -1;
+    background:#000;
+  }
+
+
+  .examSetting{
+    width: 40%;
+      margin: 30px auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      color: #32374A;
+      background: #fff;
+
+  }
+  .examSetting .examSettingHead{
+    background: #0385D6;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    color: #fff;
+  }
+  .examSetting .examSettingBody{
+    padding: 20px;
+    background: #fff;
+  }
+  .examSetting .examSettingBody label{
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .examSetting .examSettingFooter{
+    text-align: right;
+    padding: 20px;
+    background: #fff;
+  }
+  .examSetting .examSettingFooter .cancelBtn,
+  .examSetting .examSettingFooter .saveBtn{
+    background: none;
+    border: none;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #exameSettingButton:active{
+      transform: rotate(30deg);
+      transition-duration: 0.1s;
+
+  }
+
+
+
+  /* /////////////////////// */
+  /* updated 4/7 */
+
+
+  .addNewPostForm input[type='date'],
+  .addNewPostForm input[type='number'],
+  .addNewPostForm select{
+      border: none;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+
+
+
+  .examFormQuestionContainer .questions .question .answars .answarContainer{
+  }
+
+  .examFormQuestionContainer .questions .question .answars .answarContainer input[type='text']{
+      width: 40%;
+      border-bottom: 1px solid ;
+      font-size: 16px;
+      font-weight: normal;
+  }
+  .examFormQuestionContainer .questions .question .answars .answarContainer input[type='checkbox']{
+      height:20px;
+      cursor: pointer;
+  }
+
+
+
+
+  /* //////////added 5/7 ////////////// */
+
+  
+.postShowContainer{
+    width: 60%;
+    margin:30px auto;
+    border: 2px solid #32374a; 
+    background-color: #F1F1F1;
+    border-radius: 10px;
+    
+  }
+  .postShowContainer .postShowheader{
+    background-image:url('../img/cover.jpg');
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: #fff;
+    border-radius: 8px;
+  }
+  
+
+  .postShowContainer .postShowheader .location{
+    text-align: center;
+    border-bottom: 5px solid #0385d6;
+    font-size: 30px;
+    height: 240px;
+  }
+  .postShowContainer .postShowheader .location .img{
+    margin: 0 auto;
+    position: relative;
+    top:30px;
+    text-align: center;
+  }
+
+  .postShowContainer .postShowheader .location  i{
+      margin-right:10px;
+  }
+  .postShowContainer .postShowheader .location .img img{
+    background-color: #32374A;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .postShowContainer .content{
+    margin-top: 100px;
+    padding-left: 15px;
+  }
+  
+  .postShowContainer .content .details .title{
+    font-size: 40px;
+    line-height: 1.5em;
+    color: #32374a;
+  
+  }
+  
+  .postShowContainer .content .details .coach{
+    font-size: 20px;
+    line-height: 0.5em;
+    color: #707070;
+  }
+  
+  .postShowContainer .content .details .postShDescription{
+    margin-top: 25px;
+    font-size: 24px;
+  }
+  .postShowContainer .content .details .paiedOptionView{
+      font-size: 16px;
+  }
+  .postShowContainer .content .details .paiedOptionView i{
+      margin-right: 10px;
+  }
+  
+  .postShowContainer .content .details .timeLine label{
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .postShowContainer .postShowFooter .apply{
+    
+    font-size: 20px;
+    background-color: #0385d6;
+    color: #fff;
+    border: none;
+    width: 20%;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  .postShowContainer .postShowFooter .apply:hover{
+      font-weight: bold;
+      background-color: #347aa5;
+  }
+  
+
+  .applyFinished{
+      position: fixed;
+      top: 0;
+      left: 40%;
+      width: 20%;
+      padding: 20px;
+      background: rgb(1, 80, 27);
+      color: #fff;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 1000000000000;
+  }
+
+
+  /* ///added 6/7 */
+
+  .exam{
+      width: 60%;
+      margin:20px auto;
+  }
+
+  .exam .examTitle{
+    border: 2px solid #ccc;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+
+  .exam .QuestionOfExam{
+    margin-top: 5px;  
+    border: 2px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    background: #fff;
+  }
+
+  .exam .QuestionOfExam .questionAnswars .answarOfQuestion label,
+  .exam .QuestionOfExam .questionAnswars .answarOfQuestion input[type='radio']{
+      cursor: pointer;
+      font-size: 20px;
+  }
+
+  .exam .QuestionOfExam .questionAnswars .answarOfQuestion input[type='radio']{
+      height: 20px;
+  }
+  
+  .exam .questionsOfExam .QuestionOfExam .questionTitle{
+    font-size: 36px;
+    font-weight: bold;
+    color: #32374a;
+  }
+
+  .exam .examFooter {
+    text-align: right;
+  }
+
+  .exam .examFooter button{
+    height: 40px;
+    width: 200px;
+    background-color: #0385d6;
+    color: #fff;
+    outline: none;
+    opacity: 1;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+
+  
+  .postShowContainer .ranking{
+    padding: 10px;
+    font-weight: bold;
+    color: #32374a;
+    border-top: 2px solid #32374a;
+    }
+
+  .postShowContainer .ranking .rank{
+      display: grid;
+      grid-template-columns: 50% 10% auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding:5px 20px;
+      margin: 10px auto;
+  }
+
+  .postShowContainer .ranking .rankHeader{
+    font-size: 20px;
+    background: rgb(230, 227, 227);
+    text-decoration: underline;
+  }
+
+  
+
+  .postShowContainer .ranking .rank .rankOptions{
+      text-align: center;
+  }
+
+  .postShowContainer .ranking .rank .rankOptions form{
+    display: inline;
+  }
+
+  .postShowContainer .ranking .rank .rankOptions form button{
+    padding: 1px 10px;
+    margin-left:30px;
+    font-size: 16px;
+    background-color: #0385d6;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+  }
+
+
+
+   
+
+
+
+   

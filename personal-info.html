@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darrbny/personal-info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div class="container containA">
+        <div class="head">
+            <div class="header">
+                <div class="logo">
+
+                    <img src="img/logo.svg" alt="Darrbny_logo">
+
+                </div>
+                <div class="nav">
+                    <ul class="menu">
+                        <a href="">
+                            <li>STUDENT</li>
+                        </a>
+                        <a href="">
+                            <li>COMPANY</li>
+                        </a>
+                        <a href="">
+                            <li>FACULITY</li>
+                        </a>
+                        <a href="">
+                            <li>CAREER</li>
+                        </a>
+                        <a href="">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="">
+                            <li class="active">SIGN IN</li>
+                        </a>
+                    </ul>
+
+                    <img src="img/Menu.svg" class="menu_img hidden" alt="" srcset="">
+
+                    <ul class="dropDownMenu hidden">
+                        <li><a href="#">STUDENT</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="#">FACULITY</a></li>
+                        <li><a href="#">CAREER</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal_info_body">
+            <div class="side_bar">
+                <div class="info_menu">
+                    <h3>Let's Build Your Profile:</h3>
+                    <p>A single account to reach your goals</p>
+                    <ul id="menu">
+                        <li class="finished_list">
+                            <p>1</p>Personal Information.</li>
+                        <li>
+                            <p>2</p>Upload profile and cover photos</li>
+                        <li>
+                            <p>3</p>Education</li>
+                        <li>
+                            <p>4</p> Experience</li>
+                        <li>
+                            <p>5</p>Skills</li>
+                        <li>
+                            <p>6</p> Languages</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="personal_info">
+
+                <div class="form slide" id="Person_info_form1">
+
+                    <p>Edit personal information</p>
+
+                    <Form>
+                        <div class="form_container">
+                            <div class="a">
+                                <select name="gender">
+                                    <option value="-1">GENDER*</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <select name="age">
+                                    <option value="-1">AGE*</option>
+                                    <option value="19">19</option>
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                </select>
+
+                                <input type="tel" placeholder="PHONE NUMBER*" name="phone_number">
+                            </div>
+                            <div class="a">
+                                <select name="martial_status">
+                                    <option value="-1">MARTIAL STATUS*</option>
+                                    <option value="">status1</option>
+                                    <option value="">status2</option>
+                                    <option value="">status3</option>
+                                </select>
+                                <select name="military_service">
+                                    <option value="-1">MILITARY SERVICE*</option>
+                                    <option value="">status1</option>
+                                    <option value="">status2</option>
+                                    <option value="">status3</option>
+                                </select>
+                            </div>
+                            <div class="a">
+                                <select name="country">
+                                    <option value="-1">COUNTRY*</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                </select>
+                                <input type="text" placeholder="ADDRESS*" name="address">
+                            </div>
+                            <div class="a">
+                                <select name="city">
+                                    <option value="-1">Governorate/CITY*</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="Person_info_form2">
+
+                    <p>Edit profile and cover photos</p>
+
+                    <Form>
+                        <div class="uploader_container">
+                            <div>
+
+                                <label for="coverPhoto_upload">+Add cover photo</label>
+                                <br>
+                                <div class="uploader">
+                                    <input type="file" name="" onchange="set_img(this, 'cover_img')" id="coverPhoto_upload">
+                                    <label for="coverPhoto_upload" id="cover_uploader">UPLOADE FILE</label>
+                                </div>
+                                <br>
+                                <label for="profilePhoto_upload">+Add profile photo</label>
+                                <br>
+                                <div class="uploader">
+                                    <input type="file" name="" onchange="set_img(this, 'profile_img')" id="profilePhoto_upload">
+                                    <label for="profilePhoto_upload" id="prof_uploader">UPLOADE FILE</label>
+                                </div>
+
+
+                            </div>
+                            <div class="show_photos">
+                                <div class="cover_photo">
+                                    <img src="img/1.png" id="cover_img" alt="cover_photo">
+                                </div>
+                                <div class="profile_photo">
+                                    <img src="img/profile.svg" id="profile_img" alt="profile_photo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form_footer uploader_foot">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="Person_info_form3">
+
+                    <p>Edit Education</p>
+
+                    <Form>
+                        <div class="edu_container" id="edu_container">
+                            <div id="edu">
+                                <label>School/University</label>
+                                <input type="text" name="University" id="">
+                                <label>Degree</label>
+                                <input type="text" name="Degree" id="">
+                                <label>Field of study</label>
+                                <input type="text" name="Field" id="">
+                                <label>Grade</label>
+                                <input type="text" name="Grade" id="">
+                                <div class="year">
+                                    <div>
+                                        <label>From Year</label>
+                                        <input type="text" name="from_year" id="">
+                                    </div>
+                                    <div>
+                                        <label>To Year(or expected)</label>
+                                        <input type="text" name="to_year" id="">
+                                    </div>
+                                </div>
+
+                                <label>Media</label>
+                                <div class="media_container">
+                                    <div class="uploader">
+                                        <label for="edu_file_uploader">UPLOAD FILE</label>
+                                        <input type="file" name="edu_file" id="edu_file_uploader">
+                                    </div>
+                                    <div class="uploader">
+                                        <input type="text" name="" id="edu_url" placeholder="URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label id="edu_label" style="color:#30bfd0;cursor: pointer;margin-top: 10px;">+Add new education</label>
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="Person_info_form4">
+
+                    <p>Edit experience</p>
+
+                    <Form>
+                        <div class="exp_container" id="exp_container">
+                            <div id="exp">
+                                <label>Jop title</label>
+                                <input type="text" name="jop_title" id="">
+                                <label>company</label>
+                                <input type="text" name="company" id="">
+                                <label>location</label>
+                                <input type="text" name="location" id="">
+                                <div class="year">
+                                    <div>
+                                        <label>From Year</label>
+                                        <input type="text" name="from_year" id="">
+                                    </div>
+                                    <div>
+                                        <label>To Year(or expected)</label>
+                                        <input type="text" name="to_year" id="">
+                                    </div>
+                                </div>
+
+                                <label>Media</label>
+                                <div class="media_container">
+                                    <div class="uploader">
+                                        <label for="edu_file_uploader">UPLOAD FILE</label>
+                                        <input type="file" name="exp_file" id="edu_file_uploader">
+                                    </div>
+                                    <div class="uploader">
+                                        <input type="text" name="exp_url" id="" placeholder="URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label id="lbl_addExp" onclick="" style="color:#30bfd0;cursor: pointer;margin-top: 10px;">+Add new experience</label>
+
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="Person_info_form5">
+
+                    <p>Edit Skills</p>
+
+                    <Form>
+                        <div class="skill_container" id="skill_container">
+                            <div id="skill">
+                                <div class="skill_option">
+                                    <div>
+                                        <label>Skill</label>
+                                        <select name="skill">
+                                            <option></option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>skill level</label>
+                                        <select name="skill_l">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label>Media</label>
+                                <div class="media_container">
+                                    <div class="uploader">
+                                        <label for="edu_file_uploader">UPLOAD FILE</label>
+                                        <input type="file" name="skill_file" id="edu_file_uploader">
+                                    </div>
+                                    <div class="uploader">
+                                        <input type="text" name="skill_url" id="" placeholder="URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label id="lbl_addSkill" style="color:#30bfd0;cursor: pointer;margin-top: 10px;" onclick="add_skill()">+Add new skill</label>
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="Person_info_form6">
+
+                    <p>Edit languages</p>
+
+                    <Form>
+                        <div class="language_container" id="language_container">
+                            <div id="language">
+                                <div class="language_option">
+                                    <div>
+                                        <label>Language</label>
+                                        <select name="lang">
+                                            <option></option>
+                                            <option>lang1</option>
+                                            <option>lang1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                            <option>skill1</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label>Languages level</label>
+                                        <select name="lang_l">
+                                            <option></option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <label>Media</label>
+                                <div class="media_container">
+                                    <div class="uploader">
+                                        <label for="edu_file_uploader">UPLOAD FILE</label>
+                                        <input type="file" name="lang_file" id="edu_file_uploader">
+                                    </div>
+                                    <div class="uploader">
+                                        <input type="text" name="lang_url" id="" placeholder="URL">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label id="lbl_addLang" onclick="" style="color:#30bfd0;cursor: pointer;margin-top: 10px;">+Add new Language</label>
+
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="" type="button">DONE</button>
+                        </div>
+                    </Form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>

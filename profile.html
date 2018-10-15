@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/totalrate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <title>Profile</title>
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="header">
+            <div class="nav_bar">
+
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Darrabny_logo" srcset="">
+                </div>
+
+                <div class="search">
+                    <div class="search_input">
+                        <img src="img/search.svg" alt="" srcset="">
+                        <input type="text" placeholder="SEARCH" name="search_input" id="">
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">CAREERS</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="profil_info">
+                    <div class="profil_name">
+                        <div class="profile_menu fade  hidden">
+                            <div class="arrow_top">
+                                <i class="fas fa-sort-up"></i>
+                            </div>
+                            <div id="profile_link">
+                                <img src="img/prof.jpg" alt="">
+                                <div>
+                                    <p id="name">
+                                        <a href="#">Ahmed Khaled</a>
+                                    </p>
+                                    <p id="link">
+                                        <a href="#">View profile</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <ul class="small">
+                                <li>
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#">CAREERS</a>
+                                </li>
+                            </ul>
+                            <hr class="small">
+                            <ul>
+                                <li>
+                                    <a href="#">Log out</a>
+                                </li>
+                                <li>
+                                    <a href="#">Help</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Setting</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profil_imgMin">
+                            <img src="img/prof.jpg" alt="" srcset="">
+                            <i class="fas fa-sort-down"></i>
+                        </div>
+                        <h2>Ahmed Khaled</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profileContent ">
+            <div class="profileContentHeader small_hidden">
+                <div class="editProfile">
+                    <button>
+                        <i class="fas fa-pencil-alt"></i> Edit Profile
+                    </button>
+                </div>
+                <div class="profile_lable">
+                    <!-- to tab z -->
+                    <p class="tab activeLabel ">Profile</p>
+                    <!-- to tab z -->
+                    <p class="tab ">Statistics</p>
+
+                    <p class="tabCv">Print CV
+                        <i class="fas fa-print"></i>
+                    </p>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="profileSidebar">
+
+                    <div class="personalInfo">
+                        <div id="name">
+                            <p>Ahmed Khaled</p>
+                        </div>
+                        <div id="imgInfo">
+                            <div id="personalImg">
+                                <img src="img/prof.jpg" alt="profilePicture" srcset="">
+                            </div>
+                            <div id="personalDetails">
+                                <p id="profileType">Student</p>
+                                <p id="location">
+                                    <img src="img/location.svg" alt="" srcset=""> Mansoura, Egypt</p>
+                                <div id="rateInfo">
+                                    <div class="stars-outer">
+                                        <div class="stars-inner"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="activityInfo">
+                        <div id="activities">
+                            <div id="activity">
+                                <ul id="activitiesMenu">
+                                    <li id="completedProjects">Project Completed</li>
+                                    <li id="completedCourses">Courses Completed</li>
+                                    <li id="followers">Followers</li>
+                                    <li id="following">Following</li>
+                                </ul>
+                            </div>
+                            <div id="activityNo">
+                                <ul id="noMenu">
+                                    <li id="completedProjectsNo">07</li>
+                                    <li id="completedCoursesNo">22</li>
+                                    <li id="followersNo">55</li>
+                                    <li id="followingNo">111</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experienceInfo">
+                        <p class="infoTitel">Experience</p>
+
+                        <dl class="experience">
+                            <dt class="expTitel">
+                                <i class="fas fa-circle"></i>Android Developper</dt>
+                            <dd id="expCompany">Dell Company</dd>
+                            <dd id="expFromTo">Oct 2016 – Feb 2017</dd>
+                            <dd id="expLocation">United Arab Emirates</dd>
+                        </dl>
+
+                        <dl class="experience">
+                            <dt class="expTitel">
+                                <i class="fas fa-circle"></i>Android Developper</dt>
+                            <dd id="expCompany">Dell Company</dd>
+                            <dd id="expFromTo">Oct 2016 – Feb 2017</dd>
+                            <dd id="expLocation">United Arab Emirates</dd>
+                        </dl>
+
+                        <dl class="experience">
+                            <dt class="expTitel">
+                                <i class="fas fa-circle"></i>Android Developper</dt>
+                            <dd id="expCompany">Dell Company</dd>
+                            <dd id="expFromTo">Oct 2016 – Feb 2017</dd>
+                            <dd id="expLocation">United Arab Emirates</dd>
+                        </dl>
+
+                        <dl class="experience">
+                            <dt class="expTitel">
+                                <i class="fas fa-circle"></i>Android Developper</dt>
+                            <dd id="expCompany">Dell Company</dd>
+                            <dd id="expFromTo">Oct 2016 – Feb 2017</dd>
+                            <dd id="expLocation">United Arab Emirates</dd>
+                        </dl>
+                    </div>
+
+                    <div class="skillInfo">
+                        <p class="infoTitel">Skills</p>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Data Management</dt>
+                        </dl>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Data Mining</dt>
+                        </dl>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Android Developping</dt>
+                        </dl>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Data Management</dt>
+                        </dl>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Data Mining</dt>
+                        </dl>
+                        <dl class="skill">
+                            <dt class="skillTitel">
+                                <i class="fas fa-circle"></i>Android Developping</dt>
+                        </dl>
+                    </div>
+
+                    <div class="languageInfo">
+                        <p class="infoTitel">Languages</p>
+                        <dl class="language">
+                            <dt class="languageTitel">
+                                <i class="fas fa-circle"></i>Arabic</dt>
+                        </dl>
+                        <dl class="language">
+                            <dt class="languageTitel">
+                                <i class="fas fa-circle"></i>English</dt>
+                        </dl>
+                        <dl class="language">
+                            <dt class="languageTitel">
+                                <i class="fas fa-circle"></i>Franch</dt>
+                        </dl>
+                        <dl class="language">
+                            <dt class="languageTitel">
+                                <i class="fas fa-circle"></i>German</dt>
+                        </dl>
+                    </div>
+
+                </div>
+
+                <div class="profileContentHeader small_show">
+                        <div class="editProfile">
+                            <button>
+                                <i class="fas fa-pencil-alt"></i> Edit Profile
+                            </button>
+                        </div>
+                        <div class="profile_lable">
+                            <!-- to tab z -->
+                            <p class="tab activeLabel ">Profile</p>
+                            <!-- to tab z -->
+                            <p class="tab ">Statistics</p>
+        
+                            <p class="tab">Print CV
+                                <i class="fas fa-print"></i>
+                            </p>
+                        </div>
+                </div>
+                <!-- tab z-->
+                <div class="profileBody fade">
+                    <div class="profileBody_lable">
+                        <!-- to tab -->
+                        <p class="bodyTab activeLabel">Projects</p>
+                        <!-- to tab -->
+                        <p class="bodyTab">Courses</p>
+                    </div>
+
+                    <div class="courses_projects">
+                        <!-- tab -->
+                        <div class="tabA  fade profileCourses ">
+                            <div class="row">
+                                <div class="a">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="a">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="a">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="courseLogo">
+                                        <img src="img/cp.png" alt="" srcset="">
+                                    </div>
+                                    <div class="courseDetails">
+                                        <p class="name">Dell IT Internship </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- tab -->
+                        <div class="tabA fade  profileProjects hidden">
+                            <div class="row">
+                                <div class="a">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="a">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="a">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                                <div class="b">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+                                <div class="c">
+                                    <div class="projectLogo">
+                                        <img src="img/pc.png" alt="" srcset="">
+                                    </div>
+                                    <div class="projectDetails">
+                                        <p class="name">HP IT Courses </p>
+                                        <p class="fromTo">Jun 2016 – Jul 2016</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- tab z-->
+                <div class="profileBody fade hidden">
+                    <div class="profileBody_lable">
+                        <p class="bodyNegTab activeLabel">Statistics</p>
+                    </div>
+                    <div class="totalContent">
+                        <div class="totalRate">
+                            <div class="totalHead">
+                                <h3>Total Rate:</h3>
+                                <p style="color:#000;">by previous companies</p>
+                            </div>
+                            <div class="stars">
+                                <div class="stars-outer">
+                                    <div class="stars-inner"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="statisticsContent">
+                            <div class="compeltedProjects">
+                                <p>compelted projects</p>
+                                <p class="numbers">05</p>
+                                <button type="button" value="view">view</button>
+                            </div>
+                            <div class="compeltedTasks">
+                                <p>compelted tasks</p>
+                                <p class="numbers">30</p>
+                                <button type="button" value="view">view</button>
+                            </div>
+                        </div>
+
+                        <div class="tasksInfo">
+
+                            <div class="tasksInfoHeader">
+                                <div>
+                                    <p>Mytasks</p>
+                                </div>
+                                <div class="tabs">
+                                    <p class="taskTab activeLabel">Weak</p>
+                                    <p class="taskTab">Month</p>
+                                    <p class="taskTab">Year</p>
+                                </div>
+                            </div>
+
+                            <div class="tsk">
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>design 3 social media posts</p>
+                                    </div>
+                                    <div class="checkComplet completed">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Develope the User interface</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Retouch the previous Photos</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Develope the User interface</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Develope the User interface</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Retouch the previous Photos</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+
+                                <div class="taskInfo">
+                                    <div>
+                                        <p>Develope the User interface</p>
+                                    </div>
+                                    <div class="checkComplet ">
+                                        <i class="fas fa-check "></i>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <div class="footer">
+
+            <div class="help">
+                <ul>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                </ul>
+                <img src="img/logo1.svg" alt="Darrabny_logo" srcset="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

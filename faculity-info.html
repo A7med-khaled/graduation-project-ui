@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Darrbny/faculity-info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+
+<body>
+    <div class="container containA">
+        <div class="head">
+            <div class="header">
+                <div class="logo">
+
+                    <img src="img/logo.svg" alt="Darrbny_logo">
+
+                </div>
+                <div class="nav">
+                    <ul class="menu">
+                        <a href="">
+                            <li>STUDENT</li>
+                        </a>
+                        <a href="">
+                            <li>COMPANY</li>
+                        </a>
+                        <a href="">
+                            <li>FACULITY</li>
+                        </a>
+                        <a href="">
+                            <li>CAREER</li>
+                        </a>
+                        <a href="">
+                            <li>ABOUT</li>
+                        </a>
+                        <a href="">
+                            <li class="active">SIGN IN</li>
+                        </a>
+                    </ul>
+
+                    <img src="img/Menu.svg" class="menu_img hidden" alt="" srcset="">
+
+                    <ul class="dropDownMenu hidden">
+                        <li><a href="#">STUDENT</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                        <li><a href="#">FACULITY</a></li>
+                        <li><a href="#">CAREER</a></li>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="faculity_info_body">
+            <div class="side_bar">
+                <div class="info_menu">
+                    <h3>Let's Build Your Profile:</h3>
+                    <p>A single account to reach your goals</p>
+                    <ul id="menu">
+                        <li class="finished_list">
+                            <p>1</p>Faculity Information.</li>
+                        <li>
+                            <p>2</p>Upload profile and cover photos</li>
+                        <li>
+                            <p>3</p>About</li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="faculity_info">
+
+                <div class="form slide" id="">
+
+                    <p>Edit Faculity information</p>
+
+                    <Form>
+                        <div class="form_container">
+                            <div class="a">
+                                <input type="text" placeholder="Website URL" name="faculity_website">
+                                <input type="tel" placeholder="PHONE NUMBER" name="faculity_phone_number">
+                                <input type="text" placeholder="University Name" name="university">
+
+                            </div>
+                            <div class="a">
+                                <input type="text" placeholder="Official Mail" name="faculity_mail">
+                                <input type="text" placeholder="Faculity Field" name="faculity_field">
+                            </div>
+                            <div class="a">
+                                <select name="country">
+                                    <option value="-1">COUNTRY*</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                    <option value="">c1</option>
+                                    <option value="">c2</option>
+                                </select>
+                                <input type="text" placeholder="ADDRESS*" name="address">
+                            </div>
+                            <div class="a">
+                                <select name="city">
+                                    <option value="-1">Governorate/CITY*</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                    <option value="">g1</option>
+                                    <option value="">g2</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+                <div class="form slide" id="">
+
+                    <p>Edit profile and cover photos</p>
+
+                    <Form>
+                        <div class="uploader_container">
+                            <div>
+
+                                <label for="coverPhoto_upload">+Add cover photo</label>
+                                <br>
+                                <div class="uploader">
+                                    <label for="coverPhoto_upload" id="cover_uploader">UPLOADE FILE</label>
+                                </div>
+                                <input type="file" name="" onchange="set_img(this, 'cover_img')" id="coverPhoto_upload">
+                                <br>
+                                <label for="profilePhoto_upload">+Add profile photo</label>
+                                <br>
+                                <div class="uploader">
+                                    <label for="profilePhoto_upload" id="prof_uploader">UPLOADE FILE</label>
+                                </div>
+                                <input type="file" name="" id="profilePhoto_upload" onchange="set_img(this, 'profile_img')">
+                            </div>
+                            <div class="show_photos">
+                                <div class="cover_photo">
+                                    <img src="img/1.png" id="cover_img" alt="cover_photo">
+                                </div>
+                                <div class="profile_photo">
+                                    <img src="img/profile.svg" id="profile_img" alt="profile_photo">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form_footer uploader_foot">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="plusSlides(1)" type="button">NEXT</button>
+                            <p>
+                                <a onclick="plusSlides(1)"> Skip this step</a>
+                            </p>
+                        </div>
+                    </Form>
+                </div>
+
+
+
+                <div class="form slide" id="Person_info_form6">
+
+                    <p>Edit About Information</p>
+                    <h6>About the faculity</h6>
+
+                    <Form>
+                        <div class="about_container">
+                            <textarea name="about_faculity" cols="50" rows="10" placeholder="Our faculity is a part of the...."></textarea>
+                        </div>
+
+                        <div class="form_footer">
+                            <button onclick="plusSlides(-1)" type="button">PREVIOUS</button>
+                            <button onclick="" type="button">DONE</button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <script src="js/slider.js"></script>
+        <script src="js/app.js"></script>
+        
+</body>
+
+</html>

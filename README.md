@@ -2,11 +2,13 @@
  Online Training Brokerage  Platform –Darrbny-".
 
 
-##Summery
+## Summery:
  Communicate between trainee and trainers and more 
 
 
 ## Code:
-a pure code html , css , js >> with little use of jquery
-CSS-only one locally(style.css).
-JS-*Main application file(App.js).
+a pure code html , css , js >> with little use of jquery.
+
+* CSS-only one locally(style.css).
+
+* JS-*Main application file(App.js).
